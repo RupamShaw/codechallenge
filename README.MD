@@ -28,7 +28,7 @@ we need you to develop it. It's a simple input field that, when you've typed a
 couple of characters, drops down a list of options for the user to select.
 
 You'll be responsible for writing the [Web Component](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements)
-and styling it. *All the files you need to edit are in the `assets` directory.`*
+and styling it. **All the files you need to edit are in the `assets` directory.**
 
 
 ### Designs
@@ -54,15 +54,15 @@ exemption of the dynamically loaded profile pictures).
 
 ### The code
 Your code should be written as if it was going live. Feel free to use cutting
-edge functionality as we only run on Chrome. *We'll be testing you on your use
-and knowledge of ES6 features etc*.
+edge functionality as we only run on Chrome. **We'll be testing you on your use
+and knowledge of ES6 features etc**.
 
 #### Commenting and documentation
 All classes and methods should follow the [JSDoc standard](usejsdoc.org). At
 MeldCX we use code comments to generate our docs.
 
 #### Linting
-We like our code clean. The .eslintrc file has been supplied and should be
+We like our code clean. The `.eslintrc` file has been supplied and should be
 followed at all times, that way we're all on the same page.
 
 
@@ -92,8 +92,8 @@ Run `npm start` to run a local webserver, then visit
 
 
 ## Submissions
-Send your code as a zipped folder to hello@meldcx.com. *Please do not include
-`node_modules` or `dist` in the .zip*
+Send your code as a zipped folder to hello@meldcx.com. **Please do not include
+`node_modules` or `dist` in the .zip**
 
 ---
 
