@@ -1,4 +1,4 @@
-# MeldCX Autocomplete Example
+# MeldCX Autocomplete Code Assessment
 
 Estimated completion time: 2 hours
 
