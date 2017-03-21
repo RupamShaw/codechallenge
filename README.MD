@@ -3,13 +3,13 @@
 Estimated completion time: 2 hours
 
 Environment requirements:
-    - Node.js / NPM
-    - Chrome (we only work in the Chrome browser!)
+- Node.js / NPM
+- Chrome (we only work in the Chrome browser!)
 
 Assesses:
-    - HTML
-    - ES6 Javascript
-    - SASS / CSS
+- HTML
+- ES6 Javascript
+- SASS / CSS
 
 
 ## Introduction
