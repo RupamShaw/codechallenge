@@ -1,6 +1,6 @@
 # MeldCX Autocomplete Code Assessment
 
-Estimated completion time: 2 hours
+Estimated completion time: 4 hours
 
 Environment requirements:
 - Node.js / NPM
@@ -17,6 +17,8 @@ Welcome to the MeldCX code test! This was designed to assess your web
 development chops to see if you'll be a good fit for the team. So get a quiet
 space to yourself, and buckle in. It will include a bit of everything, including
 HTML, SASS / CSS, ES6 Javascript and, if you've got them, any design skills.
+*Thank you for not using any frameworks, as this is a test for pure ES6
+Javascript*
 
 
 ---
