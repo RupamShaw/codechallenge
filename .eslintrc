@@ -36,7 +36,7 @@
         // Possible errors
         'no-await-in-loop': 2,
         'no-cond-assign': 2,
-        'no-console': [2, { allow: ["warn", "error"] }],
+        'no-console': [0, { allow: ["warn", "error"] }],
         'no-constant-condition': 2,
         'no-control-regex': 2,
         'no-debugger': 2,
@@ -63,7 +63,7 @@
         'no-unsafe-finally': 2,
         'no-unsafe-negation': 2,
         'use-isnan': 2,
-        'valid-jsdoc': [2, {
+        'valid-jsdoc': [0, {
             "requireReturn": false
         }],
         'valid-typeof': 2,
@@ -156,7 +156,7 @@
         'func-call-spacing': 2,
         'func-name-matching': 2,
         'func-names': 2,
-        'func-style': 2,
+        'func-style': 0,
         'id-blacklist': 2,
         'id-length': [2, {'min': 1}],
         'id-match': 2,
@@ -164,7 +164,7 @@
         'key-spacing': 2,
         'keyword-spacing': 2,
         'line-comment-position': 2,
-        'linebreak-style': 2,
+        'linebreak-style': 0,
         'lines-around-comment': 2,
         'lines-around-directive': 2,
         'max-depth': 0,
@@ -199,7 +199,13 @@
         'no-nested-ternary': 2,
         'no-new-object': 2,
         'no-plusplus': 0,
-        'no-restricted-syntax': 2,
+        'no-restricted-syntax': [0,
+            "error",
+            {
+                "selector": "CallExpression[callee.object.name='console'][callee.property.name=/^(log|warn|error|info|trace)$/]",
+                "message": "Unexpected property on console object was called"
+            }
+        ],
         'no-tabs': 2,
         'no-ternary': 0,
         'no-trailing-spaces': 2,
@@ -216,7 +222,7 @@
         'padded-blocks': 0,
         'quote-props': 0,
         'quotes': [2, 'single'],
-        'require-jsdoc': 2,
+        'require-jsdoc': 0,
         'semi-spacing': 2,
         'semi': 2,
         'sort-keys': 0,
@@ -224,7 +230,7 @@
         'space-before-blocks': 2,
         'space-before-function-paren': [2, 'never'],
         'space-in-parens': 2,
-        'space-infix-ops': 2,
+        'space-infix-ops': 0,
         'space-unary-ops': 2,
         'spaced-comment': 2,
         'unicode-bom': 2,

@@ -1,4 +1,8 @@
 // ------------------------------------------------------------- Require modules
+const webpack = require('webpack');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+
+const config = require('./webpack.config');
 const express = require('express');
 const request = require('request');
 
@@ -9,11 +13,12 @@ const port = '3000';
 const numberOfUsers = 20;
 const path = require('path');
 const apiPath = `https://randomuser.me/api/?results=${numberOfUsers}&nat=au`;
-const publicPath = path.join(__dirname, 'dist');
-
+const publicPath = path.join(__dirname, '/dist');
+// Setup middleware
+app.use(webpackDevMiddleware(webpack(config)));
 // ---------------------------------------------------------------------- Routes
 // Setup static file routes
-app.use(express.static(publicPath));
+app.use(express.static(`${__dirname}/dist`));
 
 // Setup API call for generating random people
 app.route('/api/v1/people')
@@ -31,4 +36,6 @@ app.route('/api/v1/people')
     });
 
 
-app.listen(port);
+app.listen(port, () => {
+    console.log(`server on port ${port}`);
+});
